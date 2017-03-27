@@ -10,7 +10,7 @@ file { "/etc/${config_name} " :
 		owner  => 0,
 		group  =>  0,
 		mode   => $config_file_mode,
-		content => template ("$module_name/ntp.conf.erb"),
+		content => template("$module_name/ntp.conf.erb"),
 
 }
 }
